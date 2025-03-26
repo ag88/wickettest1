@@ -6,6 +6,7 @@ import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
 import de.agilecoders.wicket.core.Bootstrap;
+import de.agilecoders.wicket.core.settings.BootstrapSettings;
 
 /**
  * Application object for your web application.
@@ -33,7 +34,12 @@ public class WicketApplication extends WebApplication
 		super.init();
 
 		// best place to do this is in Application#init()
-		Bootstrap.install(this);
+		//Bootstrap.install(this);
+		
+		// if you want to customize bootstrap:
+		BootstrapSettings settings = new BootstrapSettings();
+		settings.useCdnResources(true);
+		Bootstrap.install(this, settings);
 
 		// needed for the styling used by the quickstart
 		getCspSettings().blocking()
