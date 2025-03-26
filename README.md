@@ -6,6 +6,8 @@ trying out [Apache Wicket](https://wicket.apache.org/) with embedded [Jetty](htt
 
 ```
 mvn package
+or
+mvnw package
 ```
 
 ## NO WARRANTY
