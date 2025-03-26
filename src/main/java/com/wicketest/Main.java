@@ -55,6 +55,9 @@ public class Main {
 	}
 	
 	public void run(String[] args) {
+		if (args.length > 0)
+			port = Integer.valueOf(args[0]);
+
 		//System.setProperty("wicket.configuration", "development");
 		System.setProperty("wicket.configuration", wicketconfig);
 		
@@ -162,9 +165,12 @@ public class Main {
 			System.exit(100);
 		}	
 	}
-	
+		
+
 	public static void main(String[] args) {
-		new Main().run(args);
+		Main main = new Main();
+		main.run(args);
+		
 	}
 
 }

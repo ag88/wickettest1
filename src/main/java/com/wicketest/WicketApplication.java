@@ -33,7 +33,7 @@ public class WicketApplication extends WebApplication
 		super.init();
 
 		// best place to do this is in Application#init()
-		//Bootstrap.install(this);
+		Bootstrap.install(this);
 
 		// needed for the styling used by the quickstart
 		getCspSettings().blocking()
