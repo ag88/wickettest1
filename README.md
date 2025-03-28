@@ -2,6 +2,10 @@
 
 trying out [Apache Wicket](https://wicket.apache.org/) with embedded [Jetty](https://jetty.org/) and [Bootstrap CSS](https://getbootstrap.com) using [wicket-bootstrap](https://github.com/martin-g/wicket-bootstrap)
 
+this demo is generated via
+https://wicket.apache.org/start/quickstart.html
+and subsequently enhanced adding Bootstrap etc
+
 ## Build
 
 ```
