@@ -4,7 +4,7 @@ trying out [Apache Wicket](https://wicket.apache.org/) with embedded [Jetty](htt
 
 this demo is generated via
 https://wicket.apache.org/start/quickstart.html
-and subsequently enhanced adding Bootstrap etc
+and subsequently manually enhanced adding Bootstrap etc
 
 ## Build
 
