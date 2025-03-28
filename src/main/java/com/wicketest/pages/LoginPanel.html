@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<wicket:panel>
+		<div class="col col-auto">
+			<h2>Please Login</h2>
+			<form id="loginForm" method="get" wicket:id="loginForm">
+				<div class="row g-3 align-items-center">
+					<span class="col-md-1 mb-3"> 
+						<label for="username" class="col-form-label">Username</label>
+					</span> 
+					<span class="col-auto"> 
+						<input type="text" id="username" wicket:id="username" 
+							class="form-control col-md-2" />
+					</span>
+				</div>
+				<div class="row g-3 align-items-center">
+					<span class="col-md-1 mb-3">
+					 	<label for="password" class="col-form-label">Password</label>
+					</span> 
+					<span class="col-auto">
+						<input type="password" id="password" wicket:id="password" 
+							class="form-control col-md-2" />
+					</span>
+				</div>
+				<div class="row g-3 align-items-center">
+					<input type="submit" class="btn btn-primary col-md-3 mb-3" 
+						name="login" value="login" />
+				</div>
+				<div class="row g-3">
+					<div wicket:id="loginStatus" class="col-md-3"></div> 				
+				</div>				
+			</form>
+			
+			<div th:if="${alertmsg} != null" th:remove="tag">
+				<div class="alert" th:classappend="${alerttype}" role="alert">
+					<h2 th:text="${alerttitle}" />
+					<div th:text="${alertmsg}"></div>
+				</div>
+			</div>
+
+		</div>
+	</wicket:panel>
+</body>
+</html>

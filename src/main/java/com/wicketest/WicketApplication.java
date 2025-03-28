@@ -5,6 +5,8 @@ import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
+import com.wicketest.pages.HomePage;
+
 import de.agilecoders.wicket.core.Bootstrap;
 import de.agilecoders.wicket.core.settings.BootstrapSettings;
 
@@ -31,7 +33,7 @@ public class WicketApplication extends WebApplication
 	@Override
 	public void init()
 	{
-		super.init();
+		super.init();			
 
 		// best place to do this is in Application#init()
 		//Bootstrap.install(this);
@@ -39,6 +41,7 @@ public class WicketApplication extends WebApplication
 		// if you want to customize bootstrap:
 		BootstrapSettings settings = new BootstrapSettings();
 		settings.useCdnResources(true);
+		settings.setAutoAppendResources(false);
 		Bootstrap.install(this, settings);
 
 		// needed for the styling used by the quickstart

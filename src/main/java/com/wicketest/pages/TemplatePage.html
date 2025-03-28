@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+	<wicket:head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title wicket:id="PageTitle">Page title goes here</title>
+	</wicket:head>
+	<body>
+	<div class="container">
+		<nav id="topmenu" wicket:id="topmenuPanel">top_menu</nav>
+		<header id="header" wicket:id="headerPanel">header</header>
+		<div class="row">
+			<wicket:container wicket:id="leftPanel">left</wicket:container>			
+			<wicket:child/>
+		</div>
+		<footer id="footer" wicket:id="footerPanel">footer</footer>
+	</div>		
+	</body>
+</html>

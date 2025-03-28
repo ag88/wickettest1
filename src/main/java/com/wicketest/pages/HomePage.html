@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
-	<head>
+	<wicket:head>
 		<meta charset="utf-8" />
-		<title>Apache Wicket Quickstart</title>
 		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
-	</head>
+	</wicket:head>
 	<body>
-		<div id="hd">
-			<div id="logo">
+	<wicket:extend>
+		<div id="hd" class="row justify-item-start w-100">
+			<div id="logo" class="col">
 				<img src="logo.png" width="50px" height="50px" alt="Wicket Logo" />
 				<h1>Apache Wicket</h1>
 			</div>
 		</div>
-		<div id="bd">
+		<div id="bd" class="row pt-4 mt-5">
 			<h2>Congratulations!</h2>
+			<p>
+			<a wicket:id="hello">Hello page</a><br>
+			<a wicket:id="template">template page</a><br>
+			<a wicket:id="login">login page</a><br>									
 			<p>
 				Your quick start works! This project is especially useful to
 				start developing your Wicket application or to create a test
@@ -56,7 +60,8 @@
 				Please mention the correct Wicket version: <wicket:container wicket:id="version">1.5-SNAPSHOT</wicket:container>.
 			</p>
 		</div>
-		<div id="ft">
+		<div id="ft" class="row mt-3 p-3 w-75">
 		</div>
+	</wicket:extend>
 	</body>
 </html>
