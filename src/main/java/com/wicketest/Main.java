@@ -58,8 +58,8 @@ public class Main {
 		if (args.length > 0)
 			port = Integer.valueOf(args[0]);
 
-		//System.setProperty("wicket.configuration", "development");
-		System.setProperty("wicket.configuration", wicketconfig);
+		System.setProperty("wicket.configuration", "development");
+		//System.setProperty("wicket.configuration", wicketconfig);
 		
 		QueuedThreadPool threadPool = new QueuedThreadPool(maxThreads, minThreads, threadsIdleTimeout);
 

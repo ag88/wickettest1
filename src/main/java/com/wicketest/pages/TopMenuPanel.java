@@ -76,6 +76,8 @@ public class TopMenuPanel extends Panel {
 				buttons.add(button);
 				button = new MenuBookmarkablePageLink<SimpleLoginPage>(SimpleLoginPage.class, Model.of("Login"));
 				button.setMarkupId("button4");
+				button = new MenuBookmarkablePageLink<DataListExample>(DataListExample.class, Model.of("Data list example"));
+				button.setMarkupId("button5");
 				buttons.add(button);			
 
 				return buttons;

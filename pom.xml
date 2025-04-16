@@ -23,7 +23,7 @@
 	<groupId>com.wicketest</groupId>
 	<artifactId>wickettest1</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.2-SNAPSHOT</version>
 	
 	<!-- TODO project name  -->
 	<name>wickettest1</name>
